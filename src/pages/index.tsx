@@ -31,7 +31,9 @@ const Home: NextPage = () => {
           width={200}
           alt="Salatwürzer"
         />
-        <h1>Salatwürzer Linkverkürzer</h1>
+        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+          Salatwürzer Linkverkürzer
+        </h1>
         <input
           type="text"
           value={text}
