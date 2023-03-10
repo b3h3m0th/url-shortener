@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.home h1 {
+  color: #fff;
+  font-size: 3em;
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  padding: 5px;
+  background-color: green;
+  margin: 20px;
+  color: white;
+}
+
+.output {
+  color: #fff;
+}
+
+a {
+  text-decoration: underline;
+}
