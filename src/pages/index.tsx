@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import { useState } from "react";
 import { api } from "~/utils/api";
 
@@ -24,11 +25,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
-        <img
+        <Image
           src="/salatwürzer.webp"
+          height={200}
+          width={200}
           alt="Salatwürzer"
-          height="200px"
-          width="200px"
         />
         <h1>Salatwürzer Linkverkürzer</h1>
         <input
