@@ -20,9 +20,6 @@ const Redirect = () => {
 
   if (data?.url) void router.push(data.url);
 
-  console.log("hi", data?.url);
-  console.log(token);
-
   return data?.url ? (
     <p>
       Click <Link href={data.url}>here</Link> if you don't get redirect
