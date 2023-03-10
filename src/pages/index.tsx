@@ -37,8 +37,14 @@ const Home: NextPage = () => {
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Dein Link"
+          className="block w-full rounded border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
         />
-        <button onClick={() => handleSubmit()}>Shorten URL</button>
+        <button
+          className="shorten-button rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"
+          onClick={() => handleSubmit()}
+        >
+          Shorten URL
+        </button>
         <h2 className="output">{data?.url ? <h2>{data.url}</h2> : null}</h2>
       </main>
     </div>

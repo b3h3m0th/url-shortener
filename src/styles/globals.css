@@ -10,13 +10,13 @@
 
 input {
   padding: 5px;
+  width: 300px !important;
+  outline: 0;
 }
 
-button {
-  padding: 10px;
-  background-color: green;
+.shorten-button {
   margin: 20px;
-  color: white;
+  width: 300px !important;
 }
 
 .output {
