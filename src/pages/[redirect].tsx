@@ -16,7 +16,7 @@ const Redirect = () => {
   }, [router.query.redirect]);
 
   const { data } = api.shorten.getOriginal.useQuery({
-    token: token ?? "asfd",
+    token: token ?? "",
   });
 
   if (data?.url) void router.push(data.url);
