@@ -12,6 +12,7 @@ const Home: NextPage = () => {
       url: string().url().required(),
     }),
     onSubmit: () => {
+      console.log("hi");
       refetch()
         .then((x) => x)
         .catch(() => void 0);
@@ -21,6 +22,8 @@ const Home: NextPage = () => {
     { url: urlForm.values.url },
     { enabled: false }
   );
+
+  console.log(data);
 
   return (
     <div className="home">
@@ -59,7 +62,7 @@ const Home: NextPage = () => {
               ? "shorten-button cursor-not-allowed opacity-50"
               : "shorten-button hover:bg-blue-700"
           }`}
-          onClick={void urlForm.handleSubmit}
+          onClick={() => void urlForm.handleSubmit()}
           disabled={!urlForm.values.url || !urlForm.isValid}
         >
           Link verkürzen
