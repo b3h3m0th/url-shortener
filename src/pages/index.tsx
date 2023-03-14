@@ -23,8 +23,6 @@ const Home: NextPage = () => {
     { enabled: false }
   );
 
-  console.log(data);
-
   return (
     <div className="home">
       <Head>
