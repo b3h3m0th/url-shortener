@@ -22,8 +22,6 @@ const Home: NextPage = () => {
     { enabled: false }
   );
 
-  console.log(urlForm.values);
-
   return (
     <div className="home">
       <Head>
