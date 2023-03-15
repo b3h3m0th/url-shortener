@@ -11,7 +11,6 @@ const Redirect = () => {
   useEffect(() => {
     if (router.query.redirect) {
       setToken(router.query.redirect as string);
-      console.log(router.query.redirect);
     }
   }, [router.query.redirect]);
 

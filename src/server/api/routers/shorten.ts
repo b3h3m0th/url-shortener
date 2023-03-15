@@ -9,7 +9,6 @@ export const shortenRouter = createTRPCRouter({
     .input(z.object({ url: z.string() }))
     .query(async ({ input }) => {
       const address = ip.address();
-      console.log(address);
       const token = nanoid(8);
       const shortened = `http://${address}:3000/${token}`;
 
@@ -22,7 +21,6 @@ export const shortenRouter = createTRPCRouter({
   getOriginal: publicProcedure
     .input(z.object({ token: z.string() }))
     .query(async ({ input }) => {
-      console.log(input);
       if (!input.token) {
         return {
           url: "",
