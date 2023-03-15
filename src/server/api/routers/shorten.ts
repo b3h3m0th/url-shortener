@@ -10,7 +10,9 @@ export const shortenRouter = createTRPCRouter({
     .query(async ({ input }) => {
       const address = ip.address();
       const token = nanoid(8);
-      const shortened = `http://${address}:3000/${token}`;
+      const shortened = `http://${address}:${
+        process.env.PORT ?? 3000
+      }/${token}`;
 
       await prisma.uRL.create({ data: { original: input.url, token: token } });
 
