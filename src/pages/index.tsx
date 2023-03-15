@@ -12,7 +12,6 @@ const Home: NextPage = () => {
       url: string().url().required(),
     }),
     onSubmit: () => {
-      console.log("hi");
       refetch()
         .then((x) => x)
         .catch(() => void 0);
